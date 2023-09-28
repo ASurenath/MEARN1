@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Sans:ital,wght@0,300;1,400&display=swap');
+body{
+    /* padding: 0px; */
+    background-image: linear-gradient(to bottom,rgb(255, 255, 226),white);
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
+.container{
+    /* background-color: blueviolet; */
+    width:98vw;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+header{
+    /* background-color:brown; */
+    width:70vw;
+    height:fit-content;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+h1{
+    /* display: none; */
+    color: rgb(77, 104, 23);
+    font-family: 'Aclonica', sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    text-shadow: 0px 0px 3px rgb(219, 119, 119);
+
+}
+header{
+    /* background-image: url(./banana-leaf-close-up-color-detail-wallpaper.jpg); */
+    background-size: cover;
+    width:100%;
+    margin: 0px 0px 10px 0px;
+}
+.recipe{
+    position: absolute;
+    padding: 5px;
+    bottom: 3px;
+    right: 10px;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.recipe:hover{
+    transform: scale(1.05);
+}
+input{
+    padding: 8px;
+    margin-right: 0px;
+}
+button{
+    padding:9px;
+    background-color: rgb(77, 104, 23);
+    border: 1px solid grey;
+    color: white;
+    margin-left: 0px;
+
+}
+h3{
+    margin:5px;
+    font-weight: 100;
+    display: inline-block;
+}
+.box{
+    background-color: rgb(255, 255, 255);
+        height:fit-content;
+        /* border: .001px rgba(0, 0, 0, 0.39) solid; */
+        border-radius: 10px;
+        margin-bottom: 5px;
+        transition: 0.5s ease-in-out;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+        position: relative;
+
+}
+
+
+img{
+    width:100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Desktop/laptop */
+@media(min-width:1000px){
+    
+    .container{
+        width: 80vw;
+    }
+    .box{
+        width:25vw;
+    }
+    .box:hover{
+        transform: scale(1.05);
+        z-index: 20;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.534);
+    
+    }
+}
+/*Tablet*/
+@media((max-width:1000px) and (min-width:400px)){
+    h1{
+        font-size: 6vw;
+    }
+    .box{
+        width:48vw;
+    }
+    input{
+        padding: 4px;
+        margin-right: 0px;
+        width:10vw;
+    }
+    button{
+        padding:4px;
+        background-color: rgb(77, 104, 23);
+        border: 1px solid grey;
+        color: white;
+        margin-left: 0px;
+    
+    }
+}
+/*Phone*/
+
+@media(max-width:400px){
+    h1{
+        font-size: 6vw;
+    }
+    input{
+        width: 30px;
+        padding: 2px;
+        margin-right: 0px;
+        width:40px;
+        height:5px;
+    }
+    button{
+        padding:2px;
+        background-color: rgb(77, 104, 23);
+        border: 1px solid grey;
+        color: white;
+        margin-left: 0px;
+    
+    }
+    .container{
+        width:98vw;
+    }
+    .box{
+        width:96vw;
+    } 
+}
